@@ -1,0 +1,191 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Prompt:wght@300;400&display=swap');
+
+
+body{
+    height: 100vh;
+    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wqHd?ver=6f67");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0px;
+    padding: 0px;
+}
+
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: azure;
+    font-family: "Prompt";
+    width: 100%;
+    background: transparent;
+    backdrop-filter: blur(15px);
+}
+.Header .Menu{
+    font-size: 1em;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 20px;
+    width: 50%;
+}
+.Header .Menu a{
+    padding: 10px;
+    color: aliceblue;
+    text-decoration: none;
+}
+.Header .Logo{
+    width: 50%;
+    font-size: 2em;
+    display: flex;
+    justify-content: left;
+    margin: 20px;
+
+}
+
+.dropdown_menu{
+    display:none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    width: 740px;
+}
+.dropdown_menu a{
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    color: aliceblue;
+}
+section{
+    width:inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+section .card{
+    width: 260px;
+    height: 340px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    border:2px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px gray;
+    margin: 30px;
+}
+
+section .card p,h3{
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+}
+
+section .card button{
+    padding: 10px;
+    border-radius: 15px;
+    width: 180px;
+    text-align: center;
+    margin-left: 40px;
+}
+
+
+.Iframe {
+    width: 65%;
+}
+
+.Iframe iframe{
+    width: 100%;
+    height: 340px;
+    border:1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px gray;
+    backdrop-filter: blur(15px);
+    margin-right: 30px;
+}
+
+a:hover{
+    background:black;
+    color: black;
+    text-decoration: underline;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(15px);
+}
+
+footer .head{
+    width: 100%;
+    padding: 10px;
+}
+
+footer .box_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+}
+
+footer .box_container .box{
+    width: 25%;
+    text-align: left;
+    color: aliceblue;
+    padding:10;
+    margin:30px;
+}
+
+@media (max-width:740px){
+    section{
+        flex-direction: column;
+    }
+    section .Iframe{
+        margin:10px;
+        padding:10px;
+        width: 100%;
+    }
+    section .card{
+        margin:10px;
+        padding:10px;
+        width: 100%;
+    }
+
+    footer{
+        width: 100%;
+        background-color: gray;
+    }
+    footer .box_container{
+        flex-direction: column;
+        padding: 10px;
+        margin:10px;
+
+    }
+    footer .box_container .box{
+        width: 100%;
+    }
+    .dropdown_menu{
+        display: flex;
+        width:100%;
+    }
+    .dropdown_menu a:hover{
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        width: 100%;
+    }
+    .Header .Menu{
+        display: none;
+    }
+    .Header .Logo{
+        display:none;
+    }
+
+}
